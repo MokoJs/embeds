@@ -1,0 +1,25 @@
+{
+  "name": "moko-embeds",
+  "version": "0.1.0",
+  "description": "Embeddable documents for moko",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "make test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/mokojs/embeds"
+  },
+  "keywords": [
+    "moko-plugin",
+    "embed"
+  ],
+  "author": "Ryan Schmukler <ryan@slingingcode.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mokojs/embeds/issues"
+  }
+}

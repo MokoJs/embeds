@@ -12,9 +12,7 @@ describe('moko-embeds', function() {
     .attr('favoriteColor', { embeds: Color })
     .attr('accounts', { embeds: Account });
 
-  before(function*() {
-    User = moko('User');
-  });
+  User.use(embeds);
 
   it('is a moko plugin', function() {
     expect(embeds).to.be.a(Function);

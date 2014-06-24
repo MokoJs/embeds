@@ -22,4 +22,10 @@ describe('moko-embeds', function() {
     var user = yield new User({username: 'Bob', favoriteColor: { name: 'Blue' }});
     expect(user.favoriteColor).to.be.a(Color);
   });
+
+  it('initializes embeddable arrays', function*() {
+    var user = yield new User({username: 'Bob', accounts: [{ balance: 100 }, { balance: 200 }]});
+    expect(user.accounts).to.be.an(Array);
+    expect(user.accounts[0]).to.have.property('balance', 100);
+  });
 });
